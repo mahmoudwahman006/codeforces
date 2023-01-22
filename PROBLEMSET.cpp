@@ -221,6 +221,74 @@ else {x=x/10;}
 }
 cout<<x<<endl;
 */
+/*
+int x;
+cin>>x;
+string flag = "true";
+for(int i=0;i<x.size();i++){
+    if(x[i]=="4"|x[i]=="7"){flag="true";}
+    else {flag="false";
+    break;}}
+if(flag="true"){cout<<"YES"<<endl;}
+else {cout<<"NO"<<endl;}                                           A. Nearly Lucky Number
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 return 0;
 }
