@@ -232,63 +232,20 @@ for(int i=0;i<x.size();i++){
 if(flag="true"){cout<<"YES"<<endl;}
 else {cout<<"NO"<<endl;}                                           A. Nearly Lucky Number
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*                                           A. Translation
+string s,t,flag ="True";
+cin>>s;
+cin>>t;
+for(int i=0;i<s.size();i++){
+    int a = s.size()-i-1;
+    if(s[i]==t[a]){flag="True";}
+    else {
+        flag="False";
+        break;}
+    }
+if(flag=="True"){cout<<"YES"<<endl;}
+else {cout<<"NO"<<endl;}
+*/
 
 return 0;
 }
