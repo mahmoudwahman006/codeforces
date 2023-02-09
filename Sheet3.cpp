@@ -43,6 +43,45 @@ for(int i=0;i<x;i++){
 for(int i=0;i<x;i++){
     cout<<arr[i]<<" ";}
 */
+/*                                D. positions in array
+int N ;
+cin>>N;
+int A[N];
+for(int i=0;i<N;i++){cin>>A[i];}
+for(int i=0;i<N;i++){
+    if(A[i]<=10){cout<<"A["<<i<<"] = " << A[i] <<endl;}}
+*/
+/*                               E. lowest number
+int N,low,pos=0;
+cin>>N;
+int A[N];
+for(int i=0;i<N;i++){cin>>A[i];}
+low = A[0];
+for(int i=0;i<N;i++){
+if(low>A[i]){
+    low = A[i];
+    pos=i;}}
+cout<< low <<" "<<pos+1<<endl;
+*/
+/*                           F. reversing
+int N ;
+cin>>N;
+int A[N];
+for(int i=0;i<N;i++){cin>>A[i];}
+for(int i=0;i<N;i++){cout<<A[N-i-1]<<" ";}
+*/
+/*                           G. palindrome array
+long long N ;
+string flag ="YES";
+cin>>N;
+long long A[N];
+for(int i=0;i<N;i++){cin>>A[i];}
+for(int i=0;i<N/2;i++){
+if(A[i]!=A[N-i-1]){flag="NO";
+break;}
+else{flag="YES";}}
+cout<<flag<<endl;
+*/
 
 return 0;
 }
