@@ -1,5 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+void swp (int&x,int&y){
+    // pass by reference &
+int temp =x;
+x=y;
+y=temp;
+}
 int main()
 {
 /*                                 A. Summation
@@ -82,6 +88,69 @@ break;}
 else{flag="YES";}}
 cout<<flag<<endl;
 */
+/*                             H. Selection sorting
+int N;
+cin>>N;
+int A[N];
+for(int i=0;i<N;i++){cin>>A[i];}
+for(int i=0;i<N;i++){
+    for(int j=i+1;j<N;j++){
+        if(A[i]>A[j]){swp(A[i],A[j]);}}}
+for(int i=0;i<N;i++){cout<<A[i]<<" ";}
+cout<<endl;
+*/
+/*                               I. smallest pair  REVIEW
+int N,low,temp;
+string flag ="yes";
+cin>>N;
+int A[N];
+for(int i=1;i<=N;i++){cin>>A[i];}
+for(int i=1;i<=N;i++){
+    for(int j=i+1;j<N;j++){
+        low = A[i] +A[j] + j -i;
+        if(flag=="yes"){temp =low;
+        flag="no";}
+        if(low<temp){swap(low,temp);}}}
+        cout<<temp;
+*/
+/*                           J. Lucky Array
+int N,x=0;
+cin>>N;
+int A[N];
+for(int i=0;i<N;i++){cin>>A[i];}
+int low = A[0];
+for(int i=0;i<N;i++){if(low>A[i]){low=A[i];}}
+for(int i=0;i<N;i++){if(low==A[i]){x++;}}
+if(x%2!=0){cout<<"Lucky"<<endl;}
+else {cout<<"UnLucky"<<endl;}
+*/
+/*                                    K - Sum Digits
+int N,sum=0;
+string z;
+cin>>N;
+cin>>z;
+for(int i=0;i<N;i++){sum +=z[i]-'0';}
+cout<<sum<<endl;
+*/
 
 return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
