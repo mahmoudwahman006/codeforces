@@ -246,7 +246,19 @@ for(int i=0;i<s.size();i++){
 if(flag=="True"){cout<<"YES"<<endl;}
 else {cout<<"NO"<<endl;}
 */
-
+/*                                            A. Lucky Division     */
+int n[12]={4,7,44,77,47,74,444,474,477,777,747,744};
+int x;
+cin>>x;
+for(int i =0;i<12;i++){
+if(x==n[i]){
+cout<<("YES")<<endl;
+break;}
+else if((x%4==0)|(x%7==0)){
+cout<<("YES")<<endl;
+break;}
+else {cout<<("NO")<<endl;}
+}
 return 0;
 }
 
