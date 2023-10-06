@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1696519678 source:c:\users\dell g3 15\desktop\codeforces\sheet1\sheet1\main.cpp
+	<iostream>
+	<stdio.h>
+	<cmath>
+	<bits/stdc++.h>
+

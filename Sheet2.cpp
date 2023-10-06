@@ -327,8 +327,25 @@ int main()
     cout<<"*";}
     cout<<"\n";}
 */
-                                                    /* code X (Convert To Decimal 2)*/
-                                                    // Still not solved
+                                                    /* code X (Convert To Decimal 2)
+    int n,m;
+    cin>>n;
+    while(n>0){
+        cin>>m;
+        int x=0,a=0,counter=0,binary=0;
+        while(m>0){
+            if(m%2==0){x = x*10;}
+            else{x = x*10 + 1;
+            a = a * 10 + 1;
+            counter++;}
+            m = m/2;}
+            counter = counter-1;
+        while(counter>=0){
+            binary = binary + pow(2,counter);
+            counter--;}
+        cout<<binary<<endl;
+        n--;}
+*/
 
                                                     /* code Y (Easy fibonacci without recursion)
     int n,n1=0,n2=1,sum=0;
